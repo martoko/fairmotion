@@ -230,7 +230,7 @@ class Viewer:
         )
         glutInitWindowSize(*self.window_size)
         glutInitWindowPosition(0, 0)
-        self.window = glutCreateWindow(self.title)
+        self.window = glutCreateWindow(bytes(self.title, 'ascii'))
 
         # Init functions
         # glutFullScreen()
